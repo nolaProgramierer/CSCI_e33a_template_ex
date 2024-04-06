@@ -7,6 +7,7 @@ you to add content without repeating-->
 {% block title %}{{ block.super }} - Intermediate Page{% endblock %}
 
 {% block header %}
+<!--The super method get be used to either append or prepend-->
     {{ block.super }}
     <p>This is additional content for the header in intermediate.html</p>
 {% endblock %}
