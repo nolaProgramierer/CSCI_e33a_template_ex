@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Patty's APP{% endblock %}</title>
+    <!-- Common CSS and JavaScript files -->
+</head>
+<body>
+    <header>
+        {% block header %}
+            <!-- Common header content -->
+            <h1>Welcome to My Patty's App</h1>
+        {% endblock %}
+    </header>
+    
+    <main>
+        <!-- You can defiine as many blocks as you want. 'content'
+        and 'article' are just variables-->
+        {% block content %}
+        {% endblock %}
+
+        {% block article %}
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <!-- Common footer content -->
+        &copy; 2024 Patty's App
+    </footer>
+</body>
+</html>
