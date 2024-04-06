@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+<!--You can have an intermediate page if necessary-->
+
+<!--The block super will grab everything from the parent allow
+you to add content without repeating-->
+{% block title %}{{ block.super }} - Intermediate Page{% endblock %}
+
+{% block header %}
+    {{ block.super }}
+    <p>This is additional content for the header in intermediate.html</p>
+{% endblock %}
+

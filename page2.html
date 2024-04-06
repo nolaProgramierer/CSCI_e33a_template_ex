@@ -1,0 +1,12 @@
+{% extends 'intermediate.html' %}
+
+<!--This inherits from both intermediate.html and base.html-->
+
+{% block title %}{{ block.super }} - Page Title{% endblock %}
+
+{% block article %}
+    <!-- Page-specific content -->
+    <p>This is the content of the page2.html template.</p>
+{% endblock %}
+
+
